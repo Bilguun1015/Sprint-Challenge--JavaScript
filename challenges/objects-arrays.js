@@ -73,7 +73,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = graduates.map(justuniv => justuniv.university);
 universities.sort();
-console.log(universities)
+console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -112,7 +112,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 tats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 */
 const animalNames = [];
-zooAnimals.forEach(element => animalNames.push(element.animal_name, element.scientific_name));
+zooAnimals.forEach(element => animalNames.push(`Name: ${element.animal_name}, scientific: ${element.scientific_name}`));
 console.log(animalNames);
 
 /* Request 2: .map()    
